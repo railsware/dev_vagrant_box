@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <title>Dev vagrant box by railsware</title>
+    <title>Rwpreise64 - Vagrant box for Ruby on Rails developers</title>
   </head>
 
   <body>
@@ -20,20 +20,52 @@
 
         <section id="downloads">
           <a href="https://github.com/railsware/dev_vagrant_box/zipball/master" class="btn">Download box</a>
-          <!--
-          <a href="https://github.com/railsware/dev_vagrant_box/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/railsware/dev_vagrant_box/tarball/master" class="btn">Download as .tar.gz</a>
-          -->
-          <a href="https://github.com/railsware/dev_vagrant_box" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+          <a href="http://railsware.github.com/" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
         </section>
       </div>
     </header>
 
     <div class="container">
       <section id="main_content">
-        <h1>Dev vagrant box</h1>
+        <h1>Getting Started with Vagrant</h1>
+        <p>
+          Vagrant uses <a href="https://www.virtualbox.org/">Oracle’s VirtualBox</a> to build configurable, lightweight, and portable virtual machines dynamically.
+        </p>
+        
+        <p>
+          Next install vagrant via RubyGems:
+        </p>
+        
+        <pre>
+          <code>
+            gem install vagrant
+          </code>
+        </pre>
+      </section>
+      <section id="usage_content">
+        <h1>Usage</h1>
 
-        <p>This is vagrant box for development</p>
+        <p>Basic setup:</p>
+        
+        <pre>
+          <code>
+            vagrant box add rwpreise64 http://files.vagrantup.com/lucid32.box
+            vagrant init rwpreise64
+            vagrant up
+          </code>
+        </pre>
+        
+        <p>
+          After running vagrant ssh, you should see something similar to the following:
+        </p>
+        
+        <pre>
+          <code>
+            $ vagrant ssh
+            ...
+            vagrant@vagrantup:~$
+          </code>
+        </pre>
       </section>
     </div>
 
